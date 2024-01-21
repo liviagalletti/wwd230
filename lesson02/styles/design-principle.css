@@ -10,8 +10,8 @@ body{
 
 main {
     display: grid;
-    grid-template: auto auto auto / auto auto auto ;
-    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px ;
     text-align: center;
     padding: 50px;
     background-color: #fff;
