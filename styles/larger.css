@@ -1,0 +1,22 @@
+@media screen and (min-width: 1200px) {
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav li {
+        margin-right: 80px; /* Add some space between the list items if needed */
+      }
+
+    main{
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    
+    h2{
+        grid-column: span 2;
+    }
+}
