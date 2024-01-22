@@ -31,11 +31,16 @@ header img {
 }
 
 nav {
+
     display: flex;
     justify-content: center; 
     align-items: center; 
     background-color: #95EDEE;
     flex-direction: row;
+}
+
+nav ul{
+    list-style: none;
 }
 
 nav a {
