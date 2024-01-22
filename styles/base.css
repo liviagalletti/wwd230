@@ -38,24 +38,17 @@ nav {
     flex-direction: row;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    list-style-type: none;
-    }
-
-nav li {
-    display: block;
-    margin-bottom: 10px;
-}
-
 nav a {
+    list-style: none;
     text-decoration: none;
     color: black;
     padding: 5px 10px;
     display: block;
 }
 
+main ul{
+    list-style: none;
+}
 
 h2{
     text-align: center;
