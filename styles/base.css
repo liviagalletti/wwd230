@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
     font-family: 'Merienda', cursive;
     color: #424651;
+    padding: 20px;
 }
 
 h1 {
@@ -62,7 +63,6 @@ h2{
 
 .card {
     border: 1px solid #ddd;
-    padding: 10px;
     border-radius: 5px;
     background-color: #f9f9f9;
     text-align: center;
@@ -77,8 +77,17 @@ h2{
     margin-bottom: 10px; /* Some space between title and content */
 }
 
-footer {
-    text-align: center;
-    margin-top: 150px;
+iframe {
+    width: 100%; /* Full width */
+    height: 500px;
+    margin-top: 20px;
 }
 
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#menu{
+    display: none;
+}
