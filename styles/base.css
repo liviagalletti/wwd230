@@ -1,33 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-
-body{
+body {
     max-width: auto;
     margin: 0 auto;
     font-family: 'Merienda', cursive;
     color: #424651;
 }
 
-header {
-    display: flex;
-    background-color: white;
-    justify-content: space-around; 
-    align-items: center;
-}
-
-header h1 {
-    color: #058ED9;
-    margin-right:auto;
+h1 {
+    color: #068589;
+    text-align: center;
+    font-family: 'Merriweather',sans-serif;
+    margin-top: 10px;
+    
 }
 
 header img {
     border-radius: 50%;
     max-width: 100%;
-    width: 180px; 
+    width: 160px; 
     height: auto;
-    padding: 20px ;
-    margin-left: 100px;
+    padding: 10px;
+    margin: auto; /* Centers the image horizontally */
+    display: block; /* Ensures the margin auto takes effect */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -53,10 +51,13 @@ nav a {
 
 main ul{
     list-style: none;
+    text-align: justify;
 }
 
 h2{
+    font-family: 'Merriweather',sans-serif;
     text-align: center;
+    color: #424651;
 }
 
 .card {
@@ -65,9 +66,19 @@ h2{
     border-radius: 5px;
     background-color: #f9f9f9;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    background-color: #95EDEE; /* Set the background color for the title */
+    color: #153131;
+    padding: 20px; /* Adjust padding for the title */
+    border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
+    margin-bottom: 10px; /* Some space between title and content */
 }
 
 footer {
     text-align: center;
+    margin-top: 150px;
 }
 
