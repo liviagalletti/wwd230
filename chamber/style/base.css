@@ -1,50 +1,72 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: white;
+}
+header img{
+    width: 130px;
+    height: 130px;
+}
+
+h1 {
+    font-family: 'Merriweather' ;
+    margin-top: 45px;
+    color: #22577A;
+}
+
+body {  
     display: grid;
     grid-template-rows: auto 50px 1fr auto;
-    height: 100vh;
+    background-color: #c7f9cc;
     margin: 0;
 }
 
-header {
-    background-color: beige;
-    text-align: center;
-    padding: 10px;
+.navigation, ul{
+    list-style: none;
+    display: flex;
 }
 
 .navigation {
-    background-color: aquamarine;
+    background-color: #80ED99;
     height: 50px;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
+    
 }
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: #22577A;
+    padding: 30px;
+    font-family: 'Open Sans';
 }
 
 .card {
-    background-color: bisque;
     padding: 20px;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Display two cards per row for a responsive layout */
-    gap: 20px; /* Add some gap between the cards */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
 }
 
 .card-content {
-    background-color: #fff; /* Set card content background color */
-    padding: 15px; /* Add padding to card content */
-    border: 1px solid #ddd; /* Add border to card content for separation */
-    border-radius: 5px; /* Add border-radius for rounded corners */
+    background-color: #fff; 
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    height: 80px;
+}
 
+.card-content:first-child{
+    grid-column: span 2;
+    height: 150px;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #38a3a5;
     text-align: center;
     padding: 10px;
 }
