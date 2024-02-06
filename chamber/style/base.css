@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template-rows: auto 50px 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+}
+
+.navigation {
+    background-color: aquamarine;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    background-color: bisque;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display two cards per row for a responsive layout */
+    gap: 20px; /* Add some gap between the cards */
+}
+
+.card-content {
+    background-color: #fff; /* Set card content background color */
+    padding: 15px; /* Add padding to card content */
+    border: 1px solid #ddd; /* Add border to card content for separation */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+
+}
+
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
