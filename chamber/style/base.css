@@ -1,19 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
 
 header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
+    padding: 10px 20px;
 }
-header img{
+
+header img {
     width: 130px;
     height: 130px;
 }
 
-h1 {
-    font-family: 'Merriweather' ;
-    margin-top: 45px;
+header h1 {
+    font-family: 'Merriweather';
     color: #22577A;
+    margin-left:-20px; /* Added missing unit */
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+}
+
+.join-button a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #22577A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Open Sans'; /* Added font family */
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 body {  
@@ -23,7 +50,7 @@ body {
     margin: 0;
 }
 
-.navigation, ul{
+.navigation, ul {
     list-style: none;
     display: flex;
 }
@@ -32,7 +59,6 @@ body {
     background-color: #80ED99;
     height: 50px;
     justify-content: space-around;
-    
 }
 
 .navigation a {
@@ -58,11 +84,6 @@ main {
     border: 1px solid #ddd;
     border-radius: 5px; 
     height: 80px;
-}
-
-.card-content:first-child{
-    grid-column: span 2;
-    height: 150px;
 }
 
 footer {
