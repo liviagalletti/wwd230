@@ -8,6 +8,8 @@
     <meta name="author" content="Livia Costa Galletti">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/base.css"> 
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/larger.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Chamber of Commerce insta">
     <meta property="og:type" content="website">
@@ -16,22 +18,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <header>
-        <img src="images/João Pessoa (1).png" alt=" logo">
-        <h1>João Pessoa Chamber</h1>
-        <div class="social-icons">
-            <a href="https://www.instagram.com"><img src="images/insta.png" alt="Instagram"></a>
+        <div id="mode">
+            <button id="menu"></button>
         </div>
-        <div class="join-button">
-            <a href="#">Join The Chamber</a>
-        </div>
-    </header>
+        
+        <header>
+            <img src="images/João Pessoa (1).png" alt=" logo">
+            <h1>João Pessoa Chamber</h1>
+            <div class="join-button">
+                <a href="#">Join The Chamber</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com"><img src="images/insta.png" alt="Instagram"></a>
+            </div>
+        </header>
 
-    <div class="navigation">
-        <nav>
+    
+        
+        <nav class="navigation">
+            <button id="menu"></button>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
@@ -39,37 +46,38 @@
                 <li><a href="#"> Join</a></li>
             </ul>
         </nav>
-    </div>
 
-    <div id="hero">
-        <img src="images/coqueirinho.jpg" alt="praia">
-
-    </div>
-   
-    <div class="card">
-        <main>
-            <section class="card-content">
-                <p>Events</p>
-            </section>
-            <section class="card-content">
-                <p> Weather</p>
-            </section>
-            <section class="card-content">
-                <p>Content of Section 3</p>
-            </section>
-            <section class="card-content">
-                <p>Content of Section 4</p>
-            </section>
-
-        </main>
-    </div>
+        
+        <div id="hero">
+            <img src="images/coqueirinho.jpg" alt="praia">
+        </div>
     
-    <footer>
-        <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
-        <p id="lastModified"></p>
-    </footer>
-    
-    <script src="script/getdates.js"></script>
+        <div class="card">
+            <main>
+                <section class="card-content">
+                    <p>Events</p>
+                </section>
+                <section class="card-content">
+                    <p> Weather</p>
+                </section>
+                <section class="card-content">
+                    <p>Content of Section 3</p>
+                </section>
+                <section class="card-content">
+                    <p>Content of Section 4</p>
+                </section>
 
+            </main>
+        </div>
+      
+        <footer>
+            <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
+            <p id="lastModified"></p>
+        </footer>
+
+            <script src="scripts/chamber.js"></script> 
+        
+    
+    
 </body>
 </html>

@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
 
+body {  
+    display: grid;
+    grid-template-rows: auto 50px 1fr auto;
+    background-color: #c7f9cc;
+    margin: 0;
+}
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
-    padding: 10px 20px;
 }
 
 header img {
     width: 130px;
     height: 130px;
+    margin-right: 10px;
 }
 
 header h1 {
     font-family: 'Merriweather';
     color: #22577A;
-    margin-left:-20px; /* Added missing unit */
-}
-
-.social-icons img {
-    width: 50px;
-    height: auto;
 }
 
 .join-button a {
@@ -30,7 +30,21 @@ header h1 {
     background-color: #22577A;
     padding: 10px 20px;
     border-radius: 5px;
-    font-family: 'Open Sans'; /* Added font family */
+    font-family: 'Open Sans'; 
+}
+
+.join-button{
+    padding: 50px;
+}
+
+.social-icons{
+    margin-left: auto; 
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 50px;    
+    height: auto;
 }
 
 #hero {
@@ -41,13 +55,6 @@ header h1 {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-body {  
-    display: grid;
-    grid-template-rows: auto 50px 1fr auto;
-    background-color: #c7f9cc;
-    margin: 0;
 }
 
 .navigation, ul {
@@ -90,4 +97,30 @@ footer {
     background-color: #38a3a5;
     text-align: center;
     padding: 10px;
+}
+
+#menu{
+    display: none;
+}
+
+#mode {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode .navigation {
+    background-color: #444;
 }

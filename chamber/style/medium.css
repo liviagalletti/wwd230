@@ -1,0 +1,52 @@
+@media screen and (max-width: 1024px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 0px solid rgba(0,0,0,.3);
+        background-color: #80ED99;
+        color: #22577A;
+        position: relative;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #80ED99;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #22577A;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+
+    .navigation a:hover, .navigation a:active {
+        color: white;
+        background-color: #22577A;
+    }
+
+    .show li {
+        display: block;
+    }
+    
+}
