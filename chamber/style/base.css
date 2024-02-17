@@ -111,6 +111,15 @@ footer {
     cursor: pointer;
 }
 
+#mode::before {
+    content: "🕶️"; /* Icon for light mode */
+}
+
+.dark-mode #mode::before {
+    content: "🔆"; /* Icon for dark mode */
+}
+
+
 
 .dark-mode {
     background-color: #333;
