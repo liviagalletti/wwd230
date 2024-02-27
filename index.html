@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD - 230 Web Frontend Development course assignment portal - Livia Costa Galletti">
+    <meta name="description"
+        content="WDD - 230 Web Frontend Development course assignment portal - Livia Costa Galletti">
     <meta name="author" content="Lívia Galletti">
     <meta property="og:title" content="Livia Galletti">
     <meta property="og:type" content="website">
@@ -16,66 +18,79 @@
     <title>Lívia Galletti - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-<header>
-    <img src="images/me.webp" alt="me">
-    <h1>Lívia Costa Galletti</h1>
-</header>
-<button id="menu"></button>
-<nav class="navigation">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="chamber/discover.html">Chamber</a></li>
-        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng" target="_blank">Scripture</a></li>
-    </ul>
-</nav>
-
-<div class="hero">
-    <div class="herolabel">
-        <p>Rome Temple</p>
-    </div>
-    <picture>
-        <source srcset="images/Rome-Temple-small.webp" media="(max-width: 500px)">
-        <source srcset="images/Rome-Temple-Medium.webp" media="(max-width: 1000px)">
-        <img src="images/Rome-Temple.webp" alt="table setting" width="1280" height="800">
-    </picture>
-</div>
-
-<main>
-    <h2>WDD 230: Web Frontend Development</h2>
-    <section class="card">
-        <h3 class="card-title">Activity and Assigments Links</h3>
+    <header>
+        <img src="images/me.webp" alt="me">
+        <h1>Lívia Costa Galletti</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
         <ul>
-            <li>01: <a href="https://liviagalletti.github.io/wdd230/lesson01/holygrail.html">Holy Layout</a></li>
-            <li>02: <a href="https://liviagalletti.github.io/wdd230/lesson02/media-query.html">Media Query</a>/<a href="https://liviagalletti.github.io/wdd230/lesson02/design.html">Design Principles Document</a></li>
-            <li>03: <a href="https://liviagalletti.github.io/wdd230/images/css_combinator.png">Css combinator</a>/<a href="https://codepen.io/livia-galletti/pen/abMyLRy">Pseudo element</a>/<a href="https://codepen.io/livia-galletti/pen/GRevwRe">Responsive Menu</a></li>
-            <li>04: <a href="https://codepen.io/livia-galletti/pen/poYaeQw">CSS Pseudo-Classes</a></li>
-            <li>05: <a href="https://liviagalletti.github.io/wdd230/lesson05/bom.html">DOM Manipulation</a></li>
-            <li>06: <a href="https://liviagalletti.github.io/wdd230/images/landscape.webp">Webp</a>/<a href="https://liviagalletti.github.io/wwd230/lesson06/responsive-image.html">Responsive-image</a></li>
-            <li>07: <a href="https://liviagalletti.github.io/wdd230/lesson07/lazyload.html">Lazy Load</a>/<a href="https://liviagalletti.github.io/wdd230/lesson07/bom/bom.html">LocalStorage</a></li>
-            <li>08: <a href=""></a></li>
-            <li>09: <a href=""></a></li>
-            <li>10: <a href=""></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/discover.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng"
+                    target="_blank">Scripture</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section class="card">
-        <h3 class="card-title">Information</h3>
-        <p>Current Weather: <span id="weather-placeholder">N/A</span></p>
-        <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
-    </section>
-</main>
+    <div class="hero">
+        <picture>
+            <img src="images/Cordoba-Argentina-Temple01.webp" alt="Argentina Temple">
+        </picture>
+        <div class="herolabel">
+            <p>Cordoba, Argentina Temple</p>
+        </div>
+    </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.221639475862!2d-34.84063728858544!3d-7.100291169586168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd12fb81f153%3A0x788fc2ac8e788455!2sAv.%20Monteiro%20da%20Franca%2C%201300%20-%20Mana%C3%ADra%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058038-323!5e0!3m2!1spt-BR!2sbr!4v1706104534228!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>WDD 230: Web Frontend Development</h2>
 
-<footer>
-    <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil</p>
-    <p id="lastModified"></p>
-</footer>
+    <main>
 
-<script src="script/getdates.js"></script>
+        <section class="card">
+            <h3 class="card-title">Activity and Assigments Links</h3>
+            <ul>
+                <li>01: <a href="https://liviagalletti.github.io/wdd230/lesson01/holygrail.html">Holy Layout</a></li>
+                <li>02: <a href="https://liviagalletti.github.io/wdd230/lesson02/media-query.html">Media Query</a>/<a
+                        href="https://liviagalletti.github.io/wdd230/lesson02/design.html">Design Principles
+                        Document</a></li>
+                <li>03: <a href="https://liviagalletti.github.io/wdd230/images/css_combinator.png">Css combinator</a>/<a
+                        href="https://codepen.io/livia-galletti/pen/abMyLRy">Pseudo element</a>/<a
+                        href="https://codepen.io/livia-galletti/pen/GRevwRe">Responsive Menu</a></li>
+                <li>04: <a href="https://codepen.io/livia-galletti/pen/poYaeQw">CSS Pseudo-Classes</a></li>
+                <li>05: <a href="https://liviagalletti.github.io/wdd230/lesson05/bom.html">DOM Manipulation</a></li>
+                <li>06: <a href="https://liviagalletti.github.io/wdd230/images/landscape.webp">Webp</a>/<a
+                        href="https://liviagalletti.github.io/wwd230/lesson06/responsive-image.html">Responsive-image</a>
+                </li>
+                <li>07: <a href="https://liviagalletti.github.io/wdd230/lesson07/lazyload.html">Lazy Load</a>/<a
+                        href="https://liviagalletti.github.io/wdd230/lesson07/bom/bom.html">LocalStorage</a></li>
+                <li>08: <a href=""></a></li>
+                <li>09: <a href=""></a></li>
+                <li>10: <a href=""></a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3 class="card-title">Information</h3>
+            <p>Current Weather: <span id="weather-placeholder">N/A</span></p>
+            <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
+        </section>
+
+    </main>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.221639475862!2d-34.84063728858544!3d-7.100291169586168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd12fb81f153%3A0x788fc2ac8e788455!2sAv.%20Monteiro%20da%20Franca%2C%201300%20-%20Mana%C3%ADra%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058038-323!5e0!3m2!1spt-BR!2sbr!4v1706104534228!5m2!1spt-BR!2sbr"
+        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="script/getdates.js"></script>
 
 </body>
+
 </html>
