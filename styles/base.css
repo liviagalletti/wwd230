@@ -108,7 +108,7 @@ footer {
 .herolabel {
 	position: absolute;
 	top: 80px;
-	left: 150px;
+	left: 400px;
 	background: radial-gradient(#ffffff, #A7B4CF);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
