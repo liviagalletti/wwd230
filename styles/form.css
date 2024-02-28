@@ -1,0 +1,113 @@
+/* styles/form.css */
+
+/* Define CSS variables */
+:root {
+    --label-color: #333;
+    --input-padding: 8px;
+    --input-border: 1px solid #ccc;
+  }
+  
+  /* Reset default margin and padding */
+  body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Ensure the form fills its container */
+  form {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  /* Style fieldset */
+  fieldset {
+      border: none;
+  }
+  
+  /* Style labels */
+  label {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--label-color);
+  }
+  
+  /* Style inputs */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+      width: 100%;
+      padding: var(--input-padding);
+      border: var(--input-border);
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  /* Style range */
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+    padding: 20px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+  
+  /* Style submit button */
+  input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: -1rem 2% 2rem 2%;
+  }
+  
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Additional styling for range input */
+  input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+  }
+
+  
+  /* Accessibility enhancements */
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="range"]:focus {
+      outline: 2px solid #007bff;
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 600px) {
+      form {
+          padding: 10px;
+      }
+      input[type="submit"] {
+          font-size: 14px;
+      }
+  }
+  
+
+
+  
