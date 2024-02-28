@@ -1,1 +1,46 @@
-    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <main>
+            <form>
+                <fieldset>
+                    <label> Username: <input type="text" name="fname" id="user" required></label>
+                    <label> Password: <input type="password" name="pwd" id="pwd" pattern="{8}" required></label>
+                    <label> Password Repeated for confirmation: <input type="password" name="pwd" id="pwd" pattern="{8}" required></label>
+                    <label> Email: <input type="email" name="email" id="email"  placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required> </label>
+                    <label> Rating: <input type="range" name="range" id="range" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                    
+                </fieldset>
+
+                <input type="submit" value=" Confirm ">
+
+            </form>
+
+        </main>
+
+
+        <footer></footer>
+        
+    </body>
+    </html>
