@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pessoa Chamber of Commerce</title>
+    <meta name="description"
+        content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
+    <meta name="author" content="Livia Costa Galletti">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce insta">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://liviagalletti.github.io/wdd230/chamber/images/insta.png">
+    <meta property="og:url" content="https://www.instagram.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="mode">
+        <button id="menu"></button>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/João Pessoa (1).png" alt="Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://liviagalletti.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://liviagalletti.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <picture>
+            <source srcset="" media="(max-width: 500px)">
+            <source srcset="" media="(max-width: 1000px)">
+            <img src="images/Joao Pessoa Hero.webp" alt="table setting" width="1900" height="800">
+            <h1> Welcome to João Pessoa Chamber </h1>
+        </picture>
+
+        <main>
+            <form>
+                <fieldset>
+                    <label> First Name: <input type="text" name="fname" id="user" required></label>
+                    <label> Last Name: <input type="text" name="fname" id="user" required></label>
+                    <label> Title or Position: <input type="text" id="position" name="position" required
+                            pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label> Email: <input type="email" name="email" id="email" placeholder="Your email address"
+                            title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required>
+                    </label>
+                    <label> Phone Number:<input type="tel" id="phone" name="phone" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                    <label> Business/organization's name : <input type="text" id="organization" name="organization"
+                            required></label>
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="" disabled selected>Select Membership Level</option>
+                        <option value="NP">NP Membership (Non-Profit)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                </fieldset>
+
+                <input type="submit" value=" Confirm ">
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <script src="scripts/chamber.js"></script>
+
+</body>
+
+</html>
