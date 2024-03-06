@@ -1,0 +1,122 @@
+"lessons": [
+    {
+        "lesson": "01",
+        "links": [
+            {
+            "url":"https://liviagalletti.github.io/wdd230/lesson01/holygrail.html",
+            "title":"Holy Layout"
+            }
+        ]
+    },
+
+    {
+        "lesson": "02",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson02/media-query.html",
+                "title":"Media Query"
+            }
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson02/design.html",
+                "title":"Design Principles"
+            }
+        ]
+    }
+    {
+        "lesson": "03",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/images/css_combinator.png",
+                "title":"Css combinator"
+            }
+            {
+                "url":"https://codepen.io/livia-galletti/pen/abMyLRy",
+                "title":"Pseudo element"
+            }
+            {
+                "url":"https://codepen.io/livia-galletti/pen/GRevwRe",
+                "title":"Responsive Menu"
+            }
+        ]
+    }
+    {
+        "lesson": "04",
+        "links": [
+            {
+                "url":"https://codepen.io/livia-galletti/pen/poYaeQw",
+                "title":"CSS Pseudo-Classes"
+            }
+        ]
+    }
+    {
+        "lesson": "05",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson05/bom.html",
+                "title":"DOM Manipulation"
+            }
+        ]
+    }
+    {
+        "lesson": "06",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/images/landscape.webp",
+                "title":"Webp"
+            }
+            {
+                "url":"https://liviagalletti.github.io/wwd230/lesson06/responsive-image.html",
+                "title":"Responsive-image"
+            }
+        ]
+    }
+    {
+        "lesson": "07",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson07/lazyload.html",
+                "title":"Lazy Load"
+            }
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson07/bom/bom.html",
+                "title":"LocalStorage"
+            }
+        ]
+    }
+    {
+        "lesson": "08",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson08/tablebuild.html",
+                "title":"HTML table"
+            }
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson08/index.html",
+                "title":"HTML Form"
+            }
+        ]
+    }
+    {
+        "lesson": "09",
+        "links": [
+            {
+                "url":"https://liviagalletti.github.io/wdd230/lesson09/new-ward-members.json",
+                "title":"Json"
+            }
+            {
+                "url":"",
+                "title":""
+            }
+        ]
+    }
+    {
+        "lesson": "10",
+        "links": [
+            {
+                "url":"",
+                "title":""
+            }
+        ]
+    }
+]
+
