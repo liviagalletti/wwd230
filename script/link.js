@@ -1,10 +1,15 @@
+
 const baseUrl = "https://liviagalletti.github.io/wdd230/";
 const linkUrl = "https://liviagalletti.github.io/wdd230/data/links.json";
 
-async function getLinks () {
-    const response = await fetch (linkUrl);
-    const data = await response.json();
-    console.log(data);
+async function getLinks() {
+    try {
+        const response = await fetch(linkUrl);
+        const data = await response.json();
+        displayLinks(data);
+    } catch (error) {
+        console.error('Error fetching links:', error);
+    }
 }
 
 getLinks();
@@ -30,3 +35,4 @@ function displayLinks(weeks) {
         linksContainer.appendChild(linksList);
     });
 }
+
