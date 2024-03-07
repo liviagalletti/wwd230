@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovations Inc.",
+        "address": "123 Main Street, Silicon Valley, CA",
+        "phone": "+1 (555) 123-4567",
+        "website": "https://techinnovations.com",
+        "image": "tech_innovations_logo.png",
+        "membership_level": "Gold",
+        "additional_info": "Leading provider of cutting-edge technology solutions."
+      },
+      {
+        "name": "Global Logistics Group",
+        "address": "456 Elm Street, New York, NY",
+        "phone": "+1 (555) 987-6543",
+        "website": "https://globallogisticsgroup.com",
+        "image": "global_logistics_logo.png",
+        "membership_level": "Silver",
+        "additional_info": "Specializing in efficient and reliable global logistics services."
+      },
+      {
+        "name": "Green Energy Solutions Ltd.",
+        "address": "789 Oak Avenue, Los Angeles, CA",
+        "phone": "+1 (555) 456-7890",
+        "website": "https://greenenergysolutions.com",
+        "image": "green_energy_logo.png",
+        "membership_level": "Bronze",
+        "additional_info": "Pioneers in renewable energy technologies."
+      },
+      {
+        "name": "HealthTech Innovations",
+        "address": "321 Pine Street, Boston, MA",
+        "phone": "+1 (555) 234-5678",
+        "website": "https://healthtechinnovations.com",
+        "image": "healthtech_innovations_logo.png",
+        "membership_level": "Platinum",
+        "additional_info": "Revolutionizing healthcare through advanced technology solutions."
+      },
+      {
+        "name": "EcoFriendly Foods Inc.",
+        "address": "101 Maple Avenue, Seattle, WA",
+        "phone": "+1 (555) 876-5432",
+        "website": "https://ecofriendlyfoods.com",
+        "image": "ecofriendly_foods_logo.png",
+        "membership_level": "Gold",
+        "additional_info": "Providing organic and sustainable food products."
+      },
+      {
+        "name": "DataTech Solutions",
+        "address": "555 Cedar Street, San Francisco, CA",
+        "phone": "+1 (555) 345-6789",
+        "website": "https://datatechsolutions.com",
+        "image": "datatech_solutions_logo.png",
+        "membership_level": "Silver",
+        "additional_info": "Experts in data analytics and business intelligence."
+      },
+      {
+        "name": "Fashion Forward Inc.",
+        "address": "888 Walnut Street, Miami, FL",
+        "phone": "+1 (555) 678-9012",
+        "website": "https://fashionforward.com",
+        "image": "fashion_forward_logo.png",
+        "membership_level": "Bronze",
+        "additional_info": "Trendsetting fashion design and retail."
+      }
+    ]
+  }
+  
