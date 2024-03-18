@@ -93,12 +93,14 @@ button:hover {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 50px;
     margin: 50px;
 }
 
 .column {
+    width: 500px;
+    height: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -107,9 +109,10 @@ button:hover {
     box-sizing: border-box; 
 }
 
-h2 {
+h2 ,p {
     text-align: center;
 }
+
 
 #location, #current-temp, #weather-icon, #weather-description, #feels-like, #wind-speed, #humidity {
     text-align: center;
@@ -123,39 +126,22 @@ img #weather-icon{
 
 /*discover*/
 
-.content  {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 20px auto;
-}
-
-/* cards */
-.card {
-    flex: 1 1 300px; /* Flex properties to control card size */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-.card h2 {
-    text-align: center;
-}
-
-.card p {
-    text-align: center;
-}
-
-
-
-/*images*/
+/* Ensure main is a flex container */
 main {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    grid-gap: 20px
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
 }
+
+.card {
+    margin-bottom: 20px; /* Add some space between cards */
+    display: flex; /* Use flexbox for each card */
+}
+
+.card h2, .card p {
+    text-align: center; /* Center-align text */
+}
+
+
 /* footer*/
 
 footer {
