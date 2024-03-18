@@ -2,13 +2,11 @@
 
 /* Global Styles */
 body {
-   
     font-family: 'Open Sans', sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
 
-/* Header Styles */
 /* Header Styles */
 .main-header {
     background-color: #80ED99;
@@ -46,66 +44,80 @@ body {
 }
 
 .main-nav ul li a {
-    color: #fff;
+    color: #03045e;
     text-decoration: none;
 }
 
 .main-nav ul li a:hover {
     text-decoration: underline;
-    color: #0056b3;
+    color: #fff;
 }
-
-
-
-
 
 /* Hero Section Styles */
 #hero {
-    width: 100%;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    position: relative; /* Added for proper positioning of h1 */
 }
 
 #hero h1 {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em; /* Tamanho da fonte */
+    font-size: 3em;
     text-align: center;  
+}
+
+button{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #80ED99; /* Green background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green background color */
 }
 
 
 /* Card Styles */
 
-/*index*/
-
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Divide o grid em três colunas de largura igual */
-    gap: 50px; /* Espaçamento entre as colunas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 50px;
     margin: 50px;
-  }
-  
-  .column {
-    width: 600px; /* Largura do conteúdo dentro do card */
-    height: 300px; /* Altura do conteúdo dentro do card */
-    padding: 20px; /* Espaçamento interno do conteúdo dentro do card */
-    border: 1px solid #ccc; /* Borda do conteúdo dentro do card */
-    border-radius: 8px; /* Arredondamento das bordas do conteúdo dentro do card */
-    background-color: #f9f9f9; /* Cor de fundo do conteúdo dentro do card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do conteúdo dentro do card */
-    box-sizing: border-box; 
-  }
+}
 
-h2{
+.column {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+h2 {
     text-align: center;
 }
 
-#location ,#current-temp,#weather-icon, #weather-description,#feels-like,#wind-speed,#humidity{
+#location, #current-temp, #weather-icon, #weather-description, #feels-like, #wind-speed, #humidity {
     text-align: center;
     font-family: Merriweather;
+}
+
+img #weather-icon{
+    margin: 0 auto;
 }
 
 
