@@ -2,11 +2,13 @@
 
 /* Global Styles */
 body {
+   
     font-family: 'Open Sans', sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
 
+/* Header Styles */
 /* Header Styles */
 .main-header {
     background-color: #80ED99;
@@ -15,6 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 .logo img {
@@ -49,16 +52,16 @@ body {
 
 .main-nav ul li a:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
+
+
+
 
 
 /* Hero Section Styles */
 #hero {
-    margin: auto;
-    margin-bottom: 20px;
     width: 100%;
-    height: auto;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
@@ -77,15 +80,16 @@ body {
 /* Card Styles */
 
 /*index*/
-.card_home {
-    display: grid; /* Define um layout de grid para o container do card */
-    grid-template-columns: 1fr 1fr; /* Divide o container do card em duas colunas de larguras iguais */
-    grid-gap: 20px; /* Espaçamento entre as colunas */
-}
 
-.card_home_content {
-    
-    width: 100%; /* Largura do conteúdo dentro do card */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide o grid em três colunas de largura igual */
+    gap: 50px; /* Espaçamento entre as colunas */
+    margin: 50px;
+  }
+  
+  .column {
+    width: 600px; /* Largura do conteúdo dentro do card */
     height: 300px; /* Altura do conteúdo dentro do card */
     padding: 20px; /* Espaçamento interno do conteúdo dentro do card */
     border: 1px solid #ccc; /* Borda do conteúdo dentro do card */
@@ -93,7 +97,16 @@ body {
     background-color: #f9f9f9; /* Cor de fundo do conteúdo dentro do card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do conteúdo dentro do card */
     box-sizing: border-box; 
-    }
+  }
+
+h2{
+    text-align: center;
+}
+
+#location ,#current-temp,#weather-icon, #weather-description,#feels-like,#wind-speed,#humidity{
+    text-align: center;
+    font-family: Merriweather;
+}
 
 
 /*discover*/

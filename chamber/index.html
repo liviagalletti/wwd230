@@ -29,8 +29,8 @@
                 <ul>
                     <li><a href="https://liviagalletti.github.io/wdd230/index.html">Home</a></li>
                     <li><a href="https://liviagalletti.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/join.html">Join</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,30 +42,32 @@
                 <img src="images/Joao Pessoa Hero.webp" alt="table setting" width="1900" height="800">
                 <h1> Welcome to João Pessoa Chamber </h1>
             </picture>
-    
-        <div class="card_home">
-            <main>
-                <section class="card_home_content">
-                    <p>Events</p>
-                </section>
-                <section class="card_home_content">
-                    <p> Weather</p>
-                </section>
-                <section class="card_home_content">
-                    <p>Content of Section 3</p>
-                </section>
-                <section class="card_home_content">
-                    <p>Content of Section 4</p>
-                </section>
-
-            </main>
-        </div>
-      
+        <main>
+            <div class="card_home">
+                <div class="container">
+                    <div class="column">
+                        <h2> Weather </h2>
+                        <div id="location"></div>
+                        <div id="current-temp"></div>
+                        <img id="weather-icon" alt="Weather Icon">
+                        <div id="weather-description"></div>
+                        <div id="feels-like"></div>
+                        <div id="wind-speed"></div>
+                        <div id="humidity"></div></p>iv>
+                    </div>
+                    <div class="column">Column 2</div>
+                    <div class="column">Column 3</div>
+                    <div class="column">Column 3</div>
+                    <div class="column">Column 3</div>
+                    <div class="column">Column 3</div>
+                </div>
+            </div>
+        </main>
         <footer>
             <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
             <p id="lastModified"></p>
         </footer>
-
+            <script src="scripts/weather.js"></script>
             <script src="scripts/chamber.js"></script> 
         
 
