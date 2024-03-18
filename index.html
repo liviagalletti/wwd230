@@ -58,7 +58,14 @@
 
         <section class="card">
             <h3 class="card-title">Information</h3>
-            <p>Current Weather: <span id="current-weather">N/A</span></p>
+            <p>Current Weather:  
+                <div id="location"></div>
+                <div id="current-temp"></div>
+                <img id="weather-icon" alt="Weather Icon">
+                <div id="weather-description"></div>
+                <div id="feels-like"></div>
+                <div id="wind-speed"></div>
+                <div id="humidity"></div></p>
             <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
         </section>
 
@@ -73,9 +80,9 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script src="script/getdates.js"></script>
     <script src="weather.js"></script>
-
+    <script src="script/getdates.js"></script>
+   
 </body>
 
 </html>
