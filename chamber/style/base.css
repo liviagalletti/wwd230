@@ -316,3 +316,39 @@ height: 800px;
 	background-color: #fff;
 	font-family: Roboto, Helvetica, sans-serif;
 }
+
+/* Style for the company cards */
+.company-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.company-card img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.company-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.company-card p {
+    margin-bottom: 5px;
+}
+
+/* Additional styles for links */
+#links {
+    display: inline;
+    gap: 20px; /* Adjust the gap between cards */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
