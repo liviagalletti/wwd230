@@ -2,6 +2,7 @@
 
 /* Global Styles */
 body {
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     background-color: #f8f8f8;
     color: #333;
@@ -68,7 +69,7 @@ body {
 #hero h1 {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3em;
@@ -78,7 +79,7 @@ body {
 button{
     position: absolute;
     top: 30%;
-    left: 48%;
+    left: 50%;
     padding: 10px 20px; /* Adjust padding as needed */
     background-color: #80ED99; /* Green background color */
     color: white; /* Text color */
@@ -94,12 +95,15 @@ button:hover {
 
 
 /* Card Styles */
-
+.card-home{
+    margin: 0 auto;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 50px;
-    margin: 50px;
+    margin: 50px 120px;
+   
 }
 
 .column {
@@ -129,20 +133,32 @@ img #weather-icon{
 
 /*banner*/
 .banner {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 15px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
+    z-index: 1000;
 }
 
-.close-banner {
-    background-color: #ccc;
-    border: none;
-    color: #333;
-    padding: 5px 10px;
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    left: 50px;
     cursor: pointer;
-    margin-top: 10px;
+    float: right;
+    font-size: 20px;
+   
+
 }
+
+.banner.show {
+    display: block;
+}
+
 
 
 /*discover*/
