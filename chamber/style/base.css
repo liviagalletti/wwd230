@@ -53,6 +53,10 @@ body {
     color: #fff;
 }
 
+.main-index{
+    margin: 0 auto ;
+}
+
 /* Hero Section Styles */
 #hero {
     
@@ -121,6 +125,23 @@ h2 ,p {
 
 img #weather-icon{
     margin: 0 auto;
+}
+
+/*banner*/
+.banner {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.close-banner {
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
