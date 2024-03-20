@@ -8,6 +8,8 @@ body {
     color: #333;
 }
 
+/*dark mode*/
+
 #dark-mode-toggle {
     position: absolute;
     top: 20px;
@@ -27,6 +29,11 @@ body {
     background-color: #001f6b; /* Darken the background color on hover */
     transform: translateY(-2px); /* Add a slight lift effect */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.dark-mode .card_home .column {
+    background-color: #222;
+    color: #fff;
 }
 
 
@@ -116,9 +123,7 @@ button:hover {
 
 
 /* Card Styles */
-.card-home{
-    margin: 0 auto;
-}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
