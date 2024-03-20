@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Pessoa Chamber of Commerce</title>
-    <meta name="description" content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
+    <meta name="description"
+        content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
     <meta name="author" content="Livia Costa Galletti">
     <link rel="stylesheet" href="style/base.css">
     <link rel="icon" href="favicon.ico">
@@ -14,8 +16,10 @@
     <meta property="og:url" content="https://www.instagram.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="logo">
@@ -31,47 +35,80 @@
         </nav>
     </header>
 
-        <main>
-            <form>
-                <fieldset>
-                    <label> First Name: <input type="text" name="fname" id="user" required></label>
-                    <label> Last Name: <input type="text" name="fname" id="user" required></label>
-                    <label> Title or Position: <input type="text" id="position" name="position" required
-                            pattern="[A-Za-z\s\-]{7,}"></label>
-                    <label> Email: <input type="email" name="email" id="email" placeholder="Your email address"
-                            title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required>
-                    </label>
-                    <label> Phone Number:<input type="tel" id="phone" name="phone" required
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
-                    <label> Business/organization's name : <input type="text" id="organization" name="organization"
-                            required></label>
-                    <label for="membership">Membership Level:</label>
-                    <select id="membership" name="membership" required>
-                        <option value="" disabled selected>Select Membership Level</option>
-                        <option value="NP">NP Membership (Non-Profit)</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Silver">Silver Membership</option>
-                        <option value="Gold">Gold Membership</option>
-                    </select>
-                    <label for="description">Business/Organization Description:</label>
-                    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
-                    <input type="hidden" id="timestamp" name="timestamp">
+    <main id="main-form">
+        <form>
+            <fieldset>
+                <label> First Name: <input type="text" name="fname" id="user" required></label>
+                <label> Last Name: <input type="text" name="fname" id="user" required></label>
+                <label> Title or Position: <input type="text" id="position" name="position" required
+                        pattern="[A-Za-z\s\-]{7,}"></label>
+                <label> Email: <input type="email" name="email" id="email" placeholder="Your email address"
+                        title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required>
+                </label>
+                <label> Phone Number:<input type="tel" id="phone" name="phone" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                <label> Business/organization's name : <input type="text" id="organization" name="organization"
+                        required></label>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select Membership Level</option>
+                    <option value="NP">NP Membership (Non-Profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                <input type="hidden" id="timestamp" name="timestamp">
+            </fieldset>
 
+            <input type="submit" value=" Confirm ">
 
-                </fieldset>
+        </form>
 
-                <input type="submit" value=" Confirm ">
+        <section class="membership">
+            <section class="plans">
 
-            </form>
+                <h2>Non-Profit Membership</h2>
+                <p>Non-profit organizations receive essential support and visibility through our Chamber's network.
+                    Enjoy mentions in our newsletters, social media shoutouts, and features on our website, enhancing
+                    awareness of your organization's mission and initiatives.</p>
 
-        </main>
+            </section>
+            <section class="plans">
 
-        <footer>
-            <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
-            <p id="lastModified"></p>
-        </footer>
+                <h2>Bronze Membership</h2>
+                <p>Bronze Members receive foundational benefits that support their organization's growth and visibility.
+                    Participate in networking events and Chamber programs to connect with peers, share insights, and
+                    access resources that can contribute to your organization's success.</p>
 
-        <script src="scripts/chamber.js"></script>
+            </section>
+            <section class="plans">
+
+                <h2>Silver Membership</h2>
+                <p>Silver Members gain access to exclusive networking events and forums, providing additional
+                    opportunities to connect with other businesses and community leaders. Forge meaningful relationships
+                    and partnerships that can drive growth and success for your organization.</p>
+
+            </section>
+            <section class="plans">
+
+                <h2>Gold Membership</h2>
+                <p>Gold Members enjoy significant benefits designed to elevate their organization's visibility and
+                    impact. Benefit from prominent placement in the Chamber's directory, featured listings on our
+                    website, and special recognition at Chamber events, enhancing your organization's visibility and
+                    credibility.</p>
+
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
 
 </body>
 

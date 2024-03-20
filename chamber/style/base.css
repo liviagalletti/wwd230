@@ -218,6 +218,12 @@ footer {
 /* styles/form.css */
 
 /* Define CSS variables */
+
+#main-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 :root {
     --label-color: #333;
     --input-padding: 8px;
@@ -232,11 +238,12 @@ footer {
   
   /* Ensure the form fills its container */
   form {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-  }
+    grid-column: 1; /* Ensure the form is placed in the first column */
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
   
   /* Style fieldset */
   fieldset {
@@ -330,6 +337,22 @@ footer {
 text-align: center;
 height: 800px;
 }
+
+.membership{
+    margin: 0 auto;
+}
+
+.plans{
+    grid-column: 2;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 600px;
+}
+
 
 /*Directory*/
 
