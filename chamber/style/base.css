@@ -163,20 +163,45 @@ img #weather-icon{
 /*discover*/
 
 /* Ensure main is a flex container */
-main {
-    display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
+.main-discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+.imagens{
+    grid-column: 2;
+}
+
+.conteudo{
+    grid-column: 1;
+}
 .card {
-    margin-bottom: 20px; /* Add some space between cards */
-    display: flex; /* Use flexbox for each card */
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.card h2, .card p {
-    text-align: center; /* Center-align text */
+
+picture {
+    flex: 1 1 50%;
 }
 
+picture img {
+    width: 400;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
 
 /* footer*/
 
