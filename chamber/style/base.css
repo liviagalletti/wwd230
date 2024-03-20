@@ -216,7 +216,7 @@ picture {
     flex: 1 1 50%;
 }
 
-picture img {
+.discover-img {
     width: 400;
     height: 300px;
     display: block;
