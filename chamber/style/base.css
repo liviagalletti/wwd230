@@ -60,7 +60,6 @@ body {
 
 /* Hero Section Styles */
 #hero {
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     position: relative; /* Added for proper positioning of h1 */
@@ -411,7 +410,7 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-img {
+.logoimg {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
