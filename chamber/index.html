@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Pessoa Chamber of Commerce</title>
-    <meta name="description" content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
+    <meta name="description"
+        content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
     <meta name="author" content="Livia Costa Galletti">
+    <link rel="stylesheet" href="style/dark-mode.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Chamber of Commerce insta">
@@ -14,84 +17,104 @@
     <meta property="og:url" content="https://www.instagram.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <header class="main-header">
-        <div class="logo">
-            <img src="images/Jampa.webp" alt="Logo">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="https://liviagalletti.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="https://liviagalletti.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                <li><a href="https://liviagalletti.github.io/wdd230/chamber/directory.html">Directory</a></li>
-                <li><a href="https://liviagalletti.github.io/wdd230/chamber/join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div id="hero">
+<body>
+    
+        <header class="main-header">
+
+            <button id="dark-mode-toggle"> Dark Mode</button>
+
+            <div class="logo">
+                <img src="images/Jampa.webp" alt="Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/index.html">Home</a></li>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://liviagalletti.github.io/wdd230/chamber/join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    <main>
+        <div id="hero">
             <h1> Come enjoy the beauty </h1>
             <button>Join</button>
             <picture>
                 <source srcset="images/JoaoPessoaHero-mobile.webp" media="(max-width: 500px)">
                 <source srcset="images/JoaoPessoaHero-tablet.webp" media="(max-width: 1000px)">
-                <img src="images/Joao Pessoa Hero.webp"  alt="table setting" width="1864" height="600">
+                <img src="images/Joao Pessoa Hero.webp" alt="table setting" width="1864" height="600">
             </picture>
-    </div>
-
-    <main class="main-index">
-
-        <div id="chamberBanner" class="banner">
-            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
-            <span class="closeBtn" onclick="closeBanner()">❌</span>
         </div>
 
-        <div class="card_home">
-            <div class="container">
-                <div class="column">
-                    <h2>Weather</h2>
-                    <div id="location"></div>
-                    <div id="current-temp"></div>
-                    <img id="weather-icon" alt="Weather Icon">
-                    <div id="weather-description"></div>
-                    <div id="feels-like"></div>
-                    <div id="wind-speed"></div>
-                    <div id="humidity"></div>
-                </div>
-                <div class="column">
-                    <h2>Exploring João Pessoa's Pristine Beaches</h2>
-                    <img>
-                    <p>Nestled along the scenic coastline of João Pessoa lies a string of pristine beaches, each offering its own unique charm and allure. In this feature, we invite you to embark on a journey of discovery as we explore some of the most captivating coastal gems this vibrant city has to offer.</p>
-                </div>
-                <div class="column">
-                    <h2>A Taste of Tradition and Innovation</h2>
-                    <p>In this feature, we embark on a culinary journey through the streets of João Pessoa, uncovering the rich tapestry of flavors that define the city's gastronomic landscape. From time-honored recipes passed down through generations to innovative fusion cuisine, João Pessoa offers a feast for the senses unlike any other..</p>
-                </div>
-                <div class="column">
-                    <h2>Preserving Paradise for Future Generations</h2>
-                    <p>In this feature, we delve into the efforts and initiatives undertaken by João Pessoa to promote sustainable tourism and preserve its natural beauty for generations to come.</p>
-                </div>
-                <div class="column">
-                    <h2>Nurturing Entrepreneurship in Brazil's Northeast</h2>
-                    <p> In this feature, we shine a spotlight on João Pessoa's burgeoning innovation ecosystem, where startups, tech companies, and creative entrepreneurs converge to drive economic growth, foster innovation, and shape the future of Brazil's Northeast region.</p>
-                </div>
-                <div class="column">
-                    <h2> Celebrating Diversity and Heritage</h2>
-                    <p> In this feature, we embark on a journey through the cultural tapestry of João Pessoa, uncovering the rich heritage, traditions, and artistic expressions that define the city's identity and captivate the hearts of locals and visitors alike.</p>
+        <main class="main-index">
+
+            <div id="chamberBanner" class="banner">
+                <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+                <span class="closeBtn" onclick="closeBanner()">❌</span>
+            </div>
+
+            <div class="card_home">
+                <div class="container">
+                    <div class="column">
+                        <h2>Weather</h2>
+                        <div id="location"></div>
+                        <div id="current-temp"></div>
+                        <img id="weather-icon" alt="Weather Icon">
+                        <div id="weather-description"></div>
+                        <div id="feels-like"></div>
+                        <div id="wind-speed"></div>
+                        <div id="humidity"></div>
+                    </div>
+                    <div class="column">
+                        <h2>Exploring João Pessoa's Pristine Beaches</h2>
+                        <img>
+                        <p>Nestled along the scenic coastline of João Pessoa lies a string of pristine beaches, each
+                            offering its own unique charm and allure. In this feature, we invite you to embark on a
+                            journey of discovery as we explore some of the most captivating coastal gems this vibrant
+                            city has to offer.</p>
+                    </div>
+                    <div class="column">
+                        <h2>A Taste of Tradition and Innovation</h2>
+                        <p>In this feature, we embark on a culinary journey through the streets of João Pessoa,
+                            uncovering the rich tapestry of flavors that define the city's gastronomic landscape. From
+                            time-honored recipes passed down through generations to innovative fusion cuisine, João
+                            Pessoa offers a feast for the senses unlike any other..</p>
+                    </div>
+                    <div class="column">
+                        <h2>Preserving Paradise for Future Generations</h2>
+                        <p>In this feature, we delve into the efforts and initiatives undertaken by João Pessoa to
+                            promote sustainable tourism and preserve its natural beauty for generations to come.</p>
+                    </div>
+                    <div class="column">
+                        <h2>Nurturing Entrepreneurship in Brazil's Northeast</h2>
+                        <p> In this feature, we shine a spotlight on João Pessoa's burgeoning innovation ecosystem,
+                            where startups, tech companies, and creative entrepreneurs converge to drive economic
+                            growth, foster innovation, and shape the future of Brazil's Northeast region.</p>
+                    </div>
+                    <div class="column">
+                        <h2> Celebrating Diversity and Heritage</h2>
+                        <p> In this feature, we embark on a journey through the cultural tapestry of João Pessoa,
+                            uncovering the rich heritage, traditions, and artistic expressions that define the city's
+                            identity and captivate the hearts of locals and visitors alike.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    
     <footer>
         <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
         <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/darkmode.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/chamber.js" defer></script> 
+    <script src="scripts/chamber.js" defer></script>
 </body>
+
 </html>
