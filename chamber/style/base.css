@@ -309,46 +309,113 @@ height: 800px;
 
 /*Directory*/
 
-#links{
-    margin: 0 auto;
+body{
+    margin: auto;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#grid{
+    position: absolute;
+    top:15%;
+    left: 45%;
+}
+
+#list{
+    position: absolute;
+    top:15%;
+    left: 55%;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	max-width: 700px;
 	background-color: #fff;
+    border-radius: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+	grid-gap: 5px;
+	align-items: center;
+
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #fff;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    margin: 0 auto;
+    padding: 60px;
+    margin-top: 50px;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+    
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-/* Style for the company cards */
-.company-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+.list section:nth-child(even) {
+	background-color: #bed;
 }
 
-.company-card img {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    margin-bottom: 10px;
+section h3 {
+	font-size: 1.5rem;
 }
 
-.company-card h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+section p {
+	font-weight: 600;
+	font-size: smaller;
 }
 
-.company-card p {
-    margin-bottom: 5px;
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
 }
 
-/* Additional styles for links */
-#links {
-    display: inline;
-    gap: 20px; /* Adjust the gap between cards */
-}
-
-a {
-    text-decoration: none;
-    color: #333;
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
 }

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Pessoa Chamber of Commerce</title>
-    <meta name="description" content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
+    <meta name="description"
+        content="Explore the vibrant tapestry of João Pessoa through the lens of our Chamber of Commerce's dedicated tourism platform. Nestled amidst breathtaking landscapes and infused with rich cultural heritage, João Pessoa offers an unforgettable experience for travelers of all interests.">
     <meta name="author" content="Livia Costa Galletti">
     <link rel="stylesheet" href="style/base.css">
     <link rel="icon" href="favicon.ico">
@@ -14,8 +16,10 @@
     <meta property="og:url" content="https://www.instagram.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="logo">
@@ -31,27 +35,81 @@
         </nav>
     </header>
 
-    <div id="hero">
-            <h1> Come enjoy the beauty </h1>
-            <button>Join</button>
-            <picture>
-                <source srcset="images/JoaoPessoaHero-mobile.webp" media="(max-width: 500px)">
-                <source srcset="images/JoaoPessoaHero-tablet.webp" media="(max-width: 1000px)">
-                <img src="images/Joao Pessoa Hero.webp"  alt="table setting" width="1920" height="600">
-            </picture>
-    </div>
-
-        <div id="links"></div>
-            <script src="scripts/directory.js"></script>
-
-
-        <footer>
-            <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
-            <p id="lastModified"></p>
-        </footer>
-
-            
+    
+    <main>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
         
+        <article class="grid">
+            <section>
+                <img src="images/tech innovations logo.png" alt="techinnovations_logo" />
+                <h3>Tech Innovations Inc.</h3>
+                <p>123 Main Street, Silicon Valley, CA</p>
+                <p>+1 (555) 123-4567</p>
+                <a href="https://techinnovations.com" target="_blank">techinnovations.com</a>
+            </section>
+    
+            <section>
+                <img src="images/gobal logo.png" alt="global logo" />
+                <h3>Global Logistics Group</h3>
+                <p>456 Elm Street, New York, NY</p>
+                <p>+1 (555) 987-6543</p>
+                <a href="https://globallogisticsgroup.com" target="_blank">globallogisticsgroup.com
+                </a>
+            </section>
+    
+            <section>
+                <img src="images/green.png" alt="green logo" />
+                <h3>Green Energy Solutions Ltd.</h3>
+                <p>789 Oak Avenue, Los Angeles, CA</p>
+                <p>+1 (555) 456-7890</p>
+                <a href="https://greenenergysolutions.com" target="_blank">greenenergysolutions.com </a>
+            </section>
+    
+            <section>
+                <img src="images/health.png" alt="health logo" />
+                <h3>HealthTech Innovations</h3>
+                <p>321 Pine Street, Boston, MA</p>
+                <p>+1 (555) 234-5678</p>
+                <a href="https://healthtechinnovations.com" target="_blank">healthtechinnovations.com</a>
+            </section>
+    
+            <section>
+                <img src="images/eco.png" alt="eco logo" />
+                <h3>EcoFriendly Foods Inc</h3>
+                <p>101 Maple Avenue, Seattle, WA</p>
+                <p>+1 (555) 876-5432</p>
+                <a href="https://ecofriendlyfoods.com" target="_blank">ecofriendlyfoods.com</a>
+            </section>
+    
+            <section>
+                <img src="images/data tech.png" alt="data logo" />
+                <h3>DataTech Solutions</h3>
+                <p>555 Cedar Street, San Francisco, CA</p>
+                <p>+1 (555) 345-6789</p>
+                <a href="https://datatechsolutions.com" target="_blank">datatechsolutions.com</a>
+            </section>
+    
+            <section>
+                <img src="images/fashion.png" alt="fashion logo" />
+                <h3>Fashion Forward Inc.</h3>
+                <p>888 Walnut Street, Miami, FL</p>
+                <p>+1 (555) 678-9012</p>
+                <a href="https://fashionforward.com" target="_blank">fashionforward.com</a>
+            </section>
+    
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
 
 </body>
+
 </html>
