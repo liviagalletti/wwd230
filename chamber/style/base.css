@@ -148,10 +148,10 @@ button:hover {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 50px;
-    margin: 50px 120px;
-   
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas com tamanho igual */
+    gap: 20px; /* Espaçamento entre os elementos */
+    margin: 50px auto; /* Centraliza o container na página */
+    padding-left: 50px; /* Adiciona um espaço de preenchimento à esquerda e à direita */
 }
 
 .column {
@@ -438,14 +438,14 @@ height: 800px;
 
 #grid{
     position: absolute;
-    top:15%;
+    top:25%;
     left: 45%;
 }
 
 #list{
     position: absolute;
-    top:15%;
-    left: 55%;
+    top:25%;
+    left: 52%;
 }
 
 section {
