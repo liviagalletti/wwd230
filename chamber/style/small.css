@@ -1,0 +1,44 @@
+@media (max-width:600px) {
+    
+    .main-nav {
+        display: none; /* Inicialmente esconder o menu */
+        flex-direction:column; /* Exibir como uma coluna */
+        align-items: center; /* Centralizar itens na coluna */
+    }
+
+    .show {
+        display: block;
+    }
+
+    .main-nav ul li {
+        display:block;
+        align-items: center;
+    }
+
+    .main-nav li a {
+        display:column; /* Exibir os links em linha */
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px; /* Espaçamento entre itens do menu */
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    #menu {
+        cursor: pointer; /* Alterar cursor para indicar que é clicável */
+        font-size: 24px; /* Ajustar o tamanho da fonte do ícone */
+        width: 40px; /* Ajustar a largura do botão */
+        height: 40px; /* Ajustar a altura do botão */
+        line-height: 40px; /* Centralizar verticalmente o conteúdo dentro do botão */
+        padding: 5px;; /* Alterar cursor para indicar que é clicável */
+
+    }
+}
