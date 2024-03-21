@@ -128,6 +128,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     position: relative; /* Added for proper positioning of h1 */
+    width: 100%;
+}
+
+#hero img {
+    display: block;
+    width: 100%; /* Ajuste a largura da imagem para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 #hero h1 {
@@ -136,8 +143,10 @@ body {
     left: 52%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
-    text-align: center;  
+    font-size: 3vw;
+    text-align: center;
+    z-index: 1;
+    max-width: 90%;  
 }
 
 button{
