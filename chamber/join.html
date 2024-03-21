@@ -46,17 +46,12 @@
     <main id="main-form">
         <form>
             <fieldset>
-                <label> First Name: <input type="text" name="fname" id="user" placeholder="First name"></label>
-                <label> Last Name: <input type="text" name="fname" id="user" required placeholder="Last name "></label>
-                <label> Title or Position: <input type="text" id="position" name="position" required
-                        pattern="[A-Za-z\s\-]{7,}"></label>
-                <label> Email: <input type="email" name="email" id="email" placeholder="someone@gmail.com"
-                        title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required>
-                </label>
-                <label> Phone Number:<input type="tel" id="phone" name="phone" required
-                        pattern="[0-8]" placeholder="123456789"></label>
-                <label> Business/organization's name : <input type="text" id="organization" name="organization"
-                        required></label>
+                <label> First Name: <input type="text" name="fname" id="first-name" placeholder="First name"></label>
+                <label> Last Name: <input type="text" name="lname" id="last-name" required placeholder="Last name "></label>
+                <label> Title or Position: <input type="text" id="position" name="position" required pattern="[A-Za-z\s\-]{7,}"></label>
+                <label> Email: <input type="email" name="email" id="email" placeholder="someone@gmail.com" title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required></label>
+                <label> Phone Number:<input type="tel" id="phone" name="phone" required pattern="[0-8]" placeholder="123456789"></label>
+                <label> Business/organization's name : <input type="text" id="organization" name="organization" required></label>
                 <label for="membership">Membership Level:</label>
                 <select id="membership" name="membership" required>
                     <option value="" disabled selected>Select Membership Level</option>
@@ -74,32 +69,32 @@
 
         </form>
 
-        <section class="membership">
-            <section class="plans">
+        <div class="membership">
+            <div class="plans">
 
                 <h2>Non-Profit Membership</h2>
                 <p>Non-profit organizations receive essential support and visibility through our Chamber's network.
                     Enjoy mentions in our newsletters, social media shoutouts, and features on our website, enhancing
                     awareness of your organization's mission and initiatives.</p>
 
-            </section>
-            <section class="plans">
+            </div>
+            <div class="plans">
 
                 <h2>Bronze Membership</h2>
                 <p>Bronze Members receive foundational benefits that support their organization's growth and visibility.
                     Participate in networking events and Chamber programs to connect with peers, share insights, and
                     access resources that can contribute to your organization's success.</p>
 
-            </section>
-            <section class="plans">
+            </div>
+            <div class="plans">
 
                 <h2>Silver Membership</h2>
                 <p>Silver Members gain access to exclusive networking events and forums, providing additional
                     opportunities to connect with other businesses and community leaders. Forge meaningful relationships
                     and partnerships that can drive growth and success for your organization.</p>
 
-            </section>
-            <section class="plans">
+            </div>
+            <div class="plans">
 
                 <h2>Gold Membership</h2>
                 <p>Gold Members enjoy significant benefits designed to elevate their organization's visibility and
@@ -107,8 +102,8 @@
                     website, and special recognition at Chamber events, enhancing your organization's visibility and
                     credibility.</p>
 
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> Livia Galletti, Brazil </p>
