@@ -1,17 +1,27 @@
-@media screen and (max-width: 1024px) {
-
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+@media (max-width:900px) {
     
-    #menu {
+    .main-nav {
+        display: none; /* Inicialmente esconder o menu */
+        flex-direction:column; /* Exibir como uma coluna */
+        align-items: center; /* Centralizar itens na coluna */
+    }
+
+    .show {
         display: block;
-        font-size: 2rem;
-        border: 0px solid rgba(0,0,0,.3);
-        background-color: #80ED99;
-        color: #22577A;
-        position: relative;
+    }
+
+    .main-nav ul li {
+        display:block;
+        align-items: center;
+    }
+
+    .main-nav li a {
+        display:column; /* Exibir os links em linha */
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px; /* Espaçamento entre itens do menu */
     }
 
     #menu::before {
@@ -22,31 +32,13 @@
         content: "X";
     }
 
-    .navigation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #80ED99;
-    }
+    #menu {
+        cursor: pointer; /* Alterar cursor para indicar que é clicável */
+        font-size: 24px; /* Ajustar o tamanho da fonte do ícone */
+        width: 40px; /* Ajustar a largura do botão */
+        height: 40px; /* Ajustar a altura do botão */
+        line-height: 40px; /* Centralizar verticalmente o conteúdo dentro do botão */
+        padding: 5px;; /* Alterar cursor para indicar que é clicável */
 
-    .navigation a {
-        display: block;
-        padding: 0.75rem;
-        text-align: left;
-        text-decoration: none;
-        color: #22577A;
-        font-weight: 700;
-        transition: 0.5s;
-        font-size: clamp(1rem, 2vmin, 1.5rem);
     }
-
-    .navigation a:hover, .navigation a:active {
-        color: white;
-        background-color: #22577A;
-    }
-
-    .show li {
-        display: block;
-    }
-    
 }

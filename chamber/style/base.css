@@ -46,6 +46,8 @@ body {
     color: #fff;
 }
 
+
+
 /* Header Styles */
 
 .joao {
@@ -79,12 +81,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline-block; /* Make the list items inline-block */
 }
 
 .main-nav ul li {
     display: inline-block;
-    margin-left: 30px;
+    padding: 8px;
 }
 
 .main-nav ul li:first-child {
