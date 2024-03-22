@@ -173,29 +173,77 @@ button:hover {
 
 /* Card Styles */
 
-.main-index .container {
+
+.main-index  {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria três colunas com larguras iguais */
-    gap: 20px; /* Define o espaçamento entre as colunas */
-    padding: 50px;
-    margin-left: 20px;
+    grid-template-columns: 600px auto ;
+    grid-gap: 20px;
+    margin: 50px;
 }
 
 .column {
-    width: auto;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
+    margin-bottom: 20px;
+}   
+
+.spotlight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.spotlight section {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    padding: 20px;
+    text-align: center;
+}
+
+.spotlight img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for spotlight heading */
+.spotlight h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.spotlight p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.feature_members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.spotlight_members {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.logoimg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 h2,h3{
     text-align: center;
 }
-
 
 
 #location, #current-temp, #weather-icon, #weather-description, #feels-like, #wind-speed, #humidity {

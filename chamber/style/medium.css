@@ -1,6 +1,6 @@
 @media (max-width:1000px) {
 
-    .main-index .container {
+    .main-index {
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between; /* Distribui os elementos igualmente ao longo do contêiner */
