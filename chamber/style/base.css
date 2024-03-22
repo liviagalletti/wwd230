@@ -178,7 +178,7 @@ button:hover {
 }
 
 .column {
-    width: 500px;
+    width: auto;
     height: 400px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -188,9 +188,10 @@ button:hover {
     box-sizing: border-box; 
 }
 
-h2 ,p {
+h2,h3{
     text-align: center;
 }
+
 
 
 #location, #current-temp, #weather-icon, #weather-description, #feels-like, #wind-speed, #humidity {
@@ -560,3 +561,81 @@ section a {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
+/*weather*/
+/* CSS for the Weather section */
+
+/* Container for weather information */
+.card_home .column:nth-child(1) {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 900px;
+    height: 650px;
+  }
+  
+  /* Location text */
+  #location {
+    font-size: 15px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Margin bottom */
+    margin-top: 10px;
+  }
+  
+  /* Current temperature */
+  #current-temp {
+    font-size: 30px; /* Font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Weather description */
+  #weather-description {
+    margin-top: 10px; /* Margin top */
+  }
+  
+  /* Feels like, wind speed, humidity */
+  #feels-like,
+  #wind-speed,
+  #humidity {
+    margin-top: 5px; /* Margin top */
+  }
+  
+  
+  /* Weather forecast */
+  #forecast {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: space-between; /* Space between items */
+    margin-top: 20px; /* Margin top */
+    
+  }
+  
+  /* Individual weather day */
+  .weather-day {
+    width: calc(20% - 20px); /* Set width of each day */
+    background-color: #f5f5f5; /* Background color */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Margin bottom */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  /* Weather icon in forecast */
+  .weather-day img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* Temperature div in forecast */
+  .temp-div {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between items */
+    margin-top: 10px; /* Margin top */
+  }
+  
+  /* High and low temperature text */
+  .temp-div p {
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+  }
+  
