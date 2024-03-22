@@ -18,7 +18,7 @@
         justify-content: space-between;
     }
 
-    .main-form{
+    #main-form{
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between;
