@@ -60,6 +60,10 @@ body {
     color: #fff;
 }
 
+.dark-mode .card_home .column:nth-child(1) {
+    background-color: #222;
+    color: #fff;
+}
 
 /* Header Styles */
 
@@ -587,7 +591,7 @@ section a {
     font-size: 30px; /* Font size */
     font-weight: bold; /* Bold text */
   }
-  
+ 
   /* Weather description */
   #weather-description {
     margin-top: 10px; /* Margin top */
@@ -613,7 +617,8 @@ section a {
   /* Individual weather day */
   .weather-day {
     width: calc(20% - 20px); /* Set width of each day */
-    background-color: #f5f5f5; /* Background color */
+    color: #001f6b; /* Background color */
+    background-color: #ccc;
     padding: 10px; /* Padding */
     margin-bottom: 20px; /* Margin bottom */
     border-radius: 5px; /* Rounded corners */
