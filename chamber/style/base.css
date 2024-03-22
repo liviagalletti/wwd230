@@ -68,11 +68,11 @@ body {
 /* Header Styles */
 
 .joao {
-    font-size: 2rem;
+    font-size: 1.5em; /* Tamanho da fonte padrão */
     color: #001f6b;
-    position: absolute;
-    top: 3%;
-    left: 5%;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding-bottom: 8px;
+    
 }
 
 .main-header {
@@ -411,6 +411,7 @@ footer {
   
 
 #thankyou{
+margin-top: 50px;
 text-align: center;
 height: 800px;
 }
