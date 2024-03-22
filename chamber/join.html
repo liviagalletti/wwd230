@@ -48,9 +48,9 @@
             <fieldset>
                 <label> First Name: <input type="text" name="fname" id="first-name" placeholder="First name"></label>
                 <label> Last Name: <input type="text" name="lname" id="last-name" required placeholder="Last name "></label>
-                <label> Title or Position: <input type="text" id="position" name="position" required pattern="[A-Za-z\s\-]{7,}"></label>
-                <label> Email: <input type="email" name="email" id="email" placeholder="someone@gmail.com" title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@" required></label>
-                <label> Phone Number:<input type="tel" id="phone" name="phone" required pattern="[0-8]" placeholder="123456789"></label>
+                <label> Title or Position: <input type="text" id="position" name="position"></label>
+                <label> Email: <input type="email" name="email" id="email" placeholder="someone@gmail.com" title="A valid email address." required></label>
+                <label> Phone Number:<input type="tel" id="phone" name="phone" placeholder="123456789"></label>
                 <label> Business/organization's name : <input type="text" id="organization" name="organization" required></label>
                 <label for="membership">Membership Level:</label>
                 <select id="membership" name="membership" required>
@@ -65,7 +65,9 @@
                 <input type="hidden" id="timestamp" name="timestamp">
             </fieldset>
 
-            <input type="submit" value=" Confirm ">
+            <a href="http://liviagalletti.github.io/wdd230/chamber/thankyou.html" id="submit-link">
+                <input type="submit" value="Confirm">
+            </a>
 
         </form>
 

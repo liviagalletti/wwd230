@@ -460,13 +460,13 @@ height: 800px;
 }
 
 #grid{
-    position: absolute;
+    position: fixed;
     top:25%;
     left: 45%;
 }
 
 #list{
-    position: absolute;
+    position: fixed;
     top:25%;
     left: 52%;
 }
