@@ -3,8 +3,7 @@ const lat =  -7.115;
 const lon = -34.8631;  
 
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=current,minutely,hourly&appid=${apiKey}`;
-
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 async function fetchCurrentWeather() {
     try {
         const response = await fetch(currentWeatherUrl);
