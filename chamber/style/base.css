@@ -288,6 +288,18 @@ img #weather-icon{
 /*discover*/
 
 /* Ensure main is a flex container */
+
+.lastvisit{
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .main-discover {
     display: grid;
     grid-template-columns: 1fr 1fr;
