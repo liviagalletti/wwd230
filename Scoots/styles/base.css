@@ -1,0 +1,81 @@
+@import url(https://coolors.co/palette/006ba6-0496ff-ffbc42-d81159-8f2d56*/);
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Satisfy&display=swap');
+
+/* base CSS for all pages */
+:root{
+   --primary_blue:#006BA6;
+   --second_blue:#0496FF;
+   --acsent_yellow:#FFBC42;
+   --acsent_pink:#D81159;
+   --magenta:#8F2D56;
+   --font-family-primary:"Roboto Mono";
+   --font-family-secondary:"PT+Serif";
+   --font-title:"Satisfy";
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Align items vertically */
+    background-color: var(--second_blue);
+    height: fit-content;
+}
+
+.title-container h1 {
+    font-family: var(--font-title);
+    color: white;
+}
+
+.title-container h2 {
+    color: white;
+    font-family: var(--font-family-primary);
+}
+
+
+nav {
+    margin-left: auto;
+    margin-right: 2%; /* Pushes the navigation to the flex end */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--second_blue);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*---------------------------------------*/
