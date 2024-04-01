@@ -3,11 +3,11 @@
 
 /* base CSS for all pages */
 :root{
-   --primary_blue:#006BA6;
-   --second_blue:#0496FF;
-   --acsent_yellow:#FFBC42;
-   --acsent_pink:#D81159;
-   --magenta:#8F2D56;
+   --primaryColor:#219EBC;
+   --acsentColor:#FFB703;
+   --textColor:#023047;
+   --textAcsentColor:#d24e04;
+   --light:#8ecae6;
    --font-family-primary:"Roboto Mono";
    --font-family-secondary:"PT+Serif";
    --font-title:"Satisfy";
@@ -23,23 +23,24 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     line-height: 1.6;
+    color: var(--textColor);
 }
 
 header {
     display: flex;
     justify-content: space-between; /* Align items with space between them */
     align-items: center; /* Align items vertically */
-    background-color: var(--second_blue);
+    background-color: var(--primaryColor);
     height: fit-content;
 }
 
 .title-container h1 {
     font-family: var(--font-title);
-    color: white;
+    color: var(--title);
 }
 
 .title-container h2 {
-    color: white;
+    color: var(--textColor);
     font-family: var(--font-family-primary);
 }
 
@@ -59,18 +60,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color:var(--textColor);
     text-decoration: none;
     font-size: 1.5rem;
     padding: 10px;
 }
+
+nav ul li a:hover{
+    background-color: var(--acsentColor);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
 
 main {
     padding: 20px;
 }
 
 footer {
-    background-color: var(--second_blue);
+    background-color: var(--primaryColor);
     color: #fff;
     text-align: center;
     padding: 10px 0;
