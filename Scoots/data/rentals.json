@@ -3,33 +3,32 @@
       {
         "name": "Honda Metro Scooter",
         "price": 20,
-        "image": "https://liviagalletti.github.io/wdd230/Scoots/images/HondaMetroScooter.avif"
+        "image": "HondaMetroScooter.avif"
       },
       {
         "name": "Honda Dio Scooter",
         "price": 30,
-        "image": "mountain_bike.jpg"
+        "image": "HondaDioScooter.png"
       },
       {
         "name": "Honda PCX150 Scooter",
         "price": 40,
-        "image": "electric_bike.jpg"
+        "image": "HondaPCX150Scooter.webp"
       },
       {
         "name": "Honda Pioneer ATV",
         "price": 50,
-        "image": "tandem_bike.jpg"
+        "image": "HondaPioneerATV.png"
       },
       {
         "name": "Jeep Wrangler - 4 door with a/c",
         "price": 25,
-        "image": "scooter.jpg"
+        "image": "JeepWrangler4.png"
       },
       {
         "name": "Jeep Wrangler - 2 door",
         "price": 15,
-        "image": "rollerblades.jpg"
+        "image": "JeepWrangler2.png"
       }
     ]
   }
-  

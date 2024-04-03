@@ -1,5 +1,6 @@
 // rentals.js
 
+
 document.addEventListener("DOMContentLoaded", function () {
     fetch('data/rentals.json')
         .then(response => response.json())
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 row.innerHTML = `
                     <td>${rental.name}</td>
                     <td>$${rental.price}</td>
-                    <td><img src="images/${rental.image}" alt="${rental.name}" style="width: 100px;"></td>
+                    <td><img src="images/${rental.image}" alt="${rental.name}"></td>
                 `;
                 tableBody.appendChild(row);
             });
