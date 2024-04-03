@@ -1,0 +1,35 @@
+{
+    "rentals": [
+      {
+        "name": "Honda Metro Scooter",
+        "price": 20,
+        "image": "https://liviagalletti.github.io/wdd230/scoots/images/HondaMetroScooter.avif"
+      },
+      {
+        "name": "Honda Dio Scooter",
+        "price": 30,
+        "image": "mountain_bike.jpg"
+      },
+      {
+        "name": "Honda PCX150 Scooter",
+        "price": 40,
+        "image": "electric_bike.jpg"
+      },
+      {
+        "name": "Honda Pioneer ATV",
+        "price": 50,
+        "image": "tandem_bike.jpg"
+      },
+      {
+        "name": "Jeep Wrangler - 4 door with a/c",
+        "price": 25,
+        "image": "scooter.jpg"
+      },
+      {
+        "name": "Jeep Wrangler - 2 door",
+        "price": 15,
+        "image": "rollerblades.jpg"
+      }
+    ]
+  }
+  
