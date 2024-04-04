@@ -1,34 +1,94 @@
 {
-    "rentals": [
-      {
-        "name": "Honda Metro Scooter",
-        "price": 20,
-        "image": "HondaMetroScooter.avif"
+  "rentals": [
+    {
+      "name": "Honda Metro Scooter",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$20",
+            "Full Day": "$30"
+          }
+        }
       },
-      {
-        "name": "Honda Dio Scooter",
-        "price": 30,
-        "image": "HondaDioScooter.png"
+      "max_persons": 1,
+      "half_day_price": "$25",
+      "full_day_price": "$35",
+      "image": "HondaMetroScooter.avif"
+    },
+    {
+      "name": "Honda Dio Scooter",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$30",
+            "Full Day": "$40"
+          }
+        }
       },
-      {
-        "name": "Honda PCX150 Scooter",
-        "price": 40,
-        "image": "HondaPCX150Scooter.webp"
+      "max_persons": 2,
+      "half_day_price": "$35",
+      "full_day_price": "$45",
+      "image": "HondaDioScooter.png"
+    },
+    {
+      "name": "Honda PCX150 Scooter",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$40",
+            "Full Day": "$50"
+          }
+        }
       },
-      {
-        "name": "Honda Pioneer ATV",
-        "price": 50,
-        "image": "HondaPioneerATV.png"
+      "max_persons": 2,
+      "half_day_price": "$45",
+      "full_day_price": "$55",
+      "image": "HondaPCX150Scooter.webp"
+    },
+    {
+      "name": "Honda Pioneer ATV",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$50",
+            "Full Day": "$70"
+          }
+        }
       },
-      {
-        "name": "Jeep Wrangler - 4 door with a/c",
-        "price": 25,
-        "image": "JeepWrangler4.png"
+      "max_persons": 4,
+      "half_day_price": "$60",
+      "full_day_price": "$80",
+      "image": "HondaPioneerATV.png"
+    },
+    {
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$70",
+            "Full Day": "$100"
+          }
+        }
       },
-      {
-        "name": "Jeep Wrangler - 2 door",
-        "price": 15,
-        "image": "JeepWrangler2.png"
-      }
-    ]
-  }
+      "max_persons": 5,
+      "half_day_price": "$85",
+      "full_day_price": "$125",
+      "image": "JeepWrangler4.png"
+    },
+    {
+      "name": "Jeep Wrangler - 2 door",
+      "price": {
+        "Reservation": {
+          "Walk-In": {
+            "Half Day": "$60",
+            "Full Day": "$85"
+          }
+        }
+      },
+      "max_persons": 4,
+      "half_day_price": "$70",
+      "full_day_price": "$90",
+      "image": "JeepWrangler2.png"
+    }
+  ]
+}

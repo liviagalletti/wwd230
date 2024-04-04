@@ -121,7 +121,110 @@ footer {
 
 /* Image size */
 #rentalsTable img {
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 100px; /* Adjusted image width */
+    max-height: 150px; /* Adjusted image height */
+}
+
+/* Reservations Page */
+
+/* Form container */
+#reservationForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Form labels */
+#reservationForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input fields */
+#reservationForm input[type="text"],
+#reservationForm input[type="email"],
+#reservationForm input[type="tel"],
+#reservationForm input[type="number"],
+#reservationForm select,
+#reservationForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+#reservationForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Submit button on hover */
+#reservationForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Contact */
+/* Contact page container */
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact information section */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+/* Google map section */
+.google-map {
+    margin-bottom: 20px;
+}
+
+/* Contact form section */
+.contact-form {
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Submit button on hover */
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
 }
 

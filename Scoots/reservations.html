@@ -31,7 +31,50 @@
     
 
     <main>
-        <!-- Content will go here -->
+        <form id="reservationForm">
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+        
+            <label for="period">Period:</label><br>
+            <select id="period" name="period" required>
+                <option value="half-day">Half Day</option>
+                <option value="full-day">Full Day</option>
+            </select><br><br>
+        
+            <label for="rentalType">Rental Type:</label><br>
+            <select id="rentalType" name="rentalType" required>
+                <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+            </select><br><br>
+        
+            <label for="number">Number of Rentals:</label><br>
+            <input type="number" id="number" name="number" required><br><br>
+        
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+        
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="homeLocation">Home State or Country:</label><br>
+            <input type="text" id="homeLocation" name="homeLocation" required><br><br>
+        
+            <label for="cruiseLine">Cruise Line (if applicable):</label><br>
+            <input type="text" id="cruiseLine" name="cruiseLine"><br><br>
+        
+            <label for="specialAccommodations">Special Accommodations/Comments:</label><br>
+            <textarea id="specialAccommodations" name="specialAccommodations" rows="4" cols="50"></textarea><br><br>
+        
+            <input type="submit" value="Submit">
+        </form>
+        
     </main>
 
     <footer>
