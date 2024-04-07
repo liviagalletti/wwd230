@@ -87,10 +87,67 @@ footer {
     width: 100%;
 }
 /*____________________________________*/
+
+/*index*/
+.hero{
+    height: 800px; /* Defina a altura desejada */
+    width: 100%;
+    overflow: hidden; /* Isso fará com que a parte da imagem que exceder a altura especificada seja cortada */
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover preenchimentos */
+}
+
+.hero img {
+    width: 100%;
+    height: auto; /* Manter a proporção */
+    object-fit: cover;
+    object-position: center;
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover preenchimentos */
+}
+
+.call-border {
+    position: absolute; /* Position the call-to-action relative to the hero */
+    top: 50%; /* Position it at the vertical center */
+    left: 50%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 100px 400px; 
+}
+.call {
+    color: white; /* Text color */
+    font-weight: 500;
+    font-size: 5rem; /* Example font size */
+    font-family: var(--font-family-primary); 
+    white-space: nowrap;
+    margin-bottom: 60px;
+}
+
+.reserve a {
+    color: white;
+    text-decoration: none;
+}
+
+.reserve {
+    position: absolute;
+    left: 46%;
+    background-color:var(--primaryColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s
+}
+
+.reserve:hover {
+    background-color: var(--textColor); /* Lighter transparent white background color on hover */
+    color: white; /* Change text color on hover */
+}
 /*Rentals*/
-
-/* styles.css */
-
 /* Table */
 #rentalsTable {
     width: 100%;
