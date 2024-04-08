@@ -193,12 +193,6 @@ footer {
     border-radius: 5px;
 }
 
-/* Form labels */
-#reservationForm label {
-    display: block;
-    margin-bottom: 5px;
-}
-
 /* Form input fields */
 #reservationForm input[type="text"],
 #reservationForm input[type="email"],
@@ -206,9 +200,8 @@ footer {
 #reservationForm input[type="number"],
 #reservationForm select,
 #reservationForm textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    width: 80%;
+    padding:8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -229,6 +222,29 @@ footer {
     background-color: #45a049;
 }
 
+.main_reservations{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.reservation_services {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 ;
+}
+.reservation_services h1 {
+    text-align: center;
+    background-color: var(--acsentColor);
+}
+
+.reservation_services ul {
+    margin: 15px;   
+}
+.reservation_services li{
+    font-size: 1.5rem;
+}
 
 /* Contact */
 /* Contact page container */
