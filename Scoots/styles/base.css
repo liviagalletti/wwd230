@@ -253,6 +253,10 @@ footer {
 
 /* Contact */
 /* Contact page container */
+.main_contact{
+    display: grid;
+    grid-template-columns: 1fr 800px;
+}
 .contact-page {
     max-width: 800px;
     margin: 0 auto;
@@ -264,13 +268,28 @@ footer {
 }
 
 /* Google map section */
-.google-map {
+.google-map h2 {
+    text-align: center;
     margin-bottom: 20px;
+}
+.google-map {
+    max-width: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding:20px;
+    border-radius: 10px;
 }
 
 /* Contact form section */
-.contact-form {
+.contact-form h2 {
+    text-align: center;
     margin-bottom: 20px;
+    background-color: var(--acsentColor);
+}
+
+.contact-form {
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 /* Form labels */
@@ -283,9 +302,8 @@ footer {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 8px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -299,6 +317,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 /* Submit button on hover */
