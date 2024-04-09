@@ -12,6 +12,7 @@
     <link rel="icon" href="favicon.ico">
     <title>~Scoots~ Motor Scooter Rental</title>
     <link rel="stylesheet" href="styles/base.css">
+    
 </head>
 
 <body>
@@ -43,13 +44,19 @@
 
     <main class="main-index">
 
-        <div id="weather-container">
-            <h2>Current Weather Information</h2>
-            <p><strong>Current Temperature:</strong> <span id="current-temperature"></span></p>
-            <p><strong>Current Humidity:</strong> <span id="current-humidity"></span></p>
-            <p><strong>Next Day's Forecast (3:00 PM):</strong> <span id="next-day-temperature"></span></p>
-            <div id="weather-details"></div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="location"></div>
+            <div id="current-temp"></div>
+            <img id="weather-icon" alt="Weather Icon">
+            <div id="weather-description"></div>
+            <div id="feels-like"></div>
+            <div id="wind-speed"></div>
+            <div id="humidity"></div>
+            <h3>Weather Forecast</h3>
+            <div id="forecast"></div>
         </div>
+        
 
         <div class="rentaltypes">
             <h2>Type of rentals</h2>
@@ -86,7 +93,8 @@
         <p>&copy; 2024 ~Scoots~ Motor Scooter Rental</p>
     </footer>
 
-    <scripts src="scripts/weather.js"></scripts>
+    <script src="scripts/weather.js" defer></script>
+
 </body>
 
 </html>
