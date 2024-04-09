@@ -147,6 +147,31 @@ footer {
     background-color: var(--textColor); /* Lighter transparent white background color on hover */
     color: white; /* Change text color on hover */
 }
+
+.rentaltypes {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.rentaltypes h2 {
+    font-size: 2rem;
+}
+
+.rentaltypes h3 {
+    font-size: 1.5rem;
+}
+
+
+.rentaltypes ul li{
+    font-size: 1.5rem;
+}
+
+.rentaltypes ul p{
+    font-size: 1.2rem;
+}
+
 /*Rentals*/
 /* Table */
 #rentalsTable {
