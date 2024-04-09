@@ -89,11 +89,8 @@ footer {
 
 /*index*/
 .hero{
-    height: 800px; /* Defina a altura desejada */
+    max-height: 800px; 
     width: 100%;
-    overflow: hidden; /* Isso fará com que a parte da imagem que exceder a altura especificada seja cortada */
-    margin: 0; /* Remover margens */
-    padding: 0; /* Remover preenchimentos */
 }
 
 .hero img {
@@ -101,8 +98,6 @@ footer {
     height: auto; /* Manter a proporção */
     object-fit: cover;
     object-position: center;
-    margin: 0; /* Remover margens */
-    padding: 0; /* Remover preenchimentos */
 }
 
 .call-border {
@@ -146,6 +141,11 @@ footer {
 .reserve:hover {
     background-color: var(--textColor); /* Lighter transparent white background color on hover */
     color: white; /* Change text color on hover */
+}
+
+.main-index{
+    display: grid;
+    grid-template-columns: 600px 1fr;
 }
 
 .rentaltypes {
