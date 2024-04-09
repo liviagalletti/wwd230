@@ -191,6 +191,7 @@ footer {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Form input fields */
@@ -200,8 +201,8 @@ footer {
 #reservationForm input[type="number"],
 #reservationForm select,
 #reservationForm textarea {
-    width: 80%;
-    padding:8px;
+    width: 90%;
+    padding:10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -224,7 +225,7 @@ footer {
 
 .main_reservations{
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 1fr 800px;
 }
 
 .reservation_services {
@@ -232,18 +233,22 @@ footer {
     padding: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 0 ;
+    margin-left: 15% ;
 }
 .reservation_services h1 {
     text-align: center;
+    font-size: 2rem;
     background-color: var(--acsentColor);
+    margin-bottom: 50px;
 }
 
 .reservation_services ul {
-    margin: 15px;   
+    margin: 15px; 
+    
 }
 .reservation_services li{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
 }
 
 /* Contact */
