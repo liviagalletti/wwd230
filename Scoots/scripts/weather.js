@@ -1,12 +1,9 @@
-
-        const apiKey = "3c931e01b408736408c6cbb8823da90e";
+const apiKey = "3c931e01b408736408c6cbb8823da90e";
         const lat = 20.5083;
         const lon = -86.9458;
 
         const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-
         const urlOpenWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude={hourly,minutely,alerts}&appid=${apiKey}`;
-
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
         async function apiFetch() {
@@ -83,7 +80,6 @@
                 .filter((fc) => fc.dt_txt.includes("15:00:00")) // Selecting 3:00pm forecast
                 .map((fc) => {
                     const timestamp = fc.dt * 1000;
-
                     return {
                         unixTimestamp: timestamp,
                         date: dateFormate(timestamp),
@@ -97,7 +93,6 @@
                 });
 
             const forecast = document.querySelector("#forecast");
-
             fiveDayResults.forEach((day) => {
                 const weatherDay = document.createElement("div");
                 weatherDay.setAttribute("class", "weather-day");
@@ -145,7 +140,7 @@
         }
 
         function displayOneCallResults(data) {
-            const nextDay = data.daily[1]; // Selecting next day's forecast
+            const nextDay = data.daily.find((day, index) => index === 1);
             const timestamp = nextDay.dt * 1000;
             const weekday = dayOfTheWeek(timestamp);
 
@@ -212,4 +207,3 @@
             const date = new Date(timestamp);
             return date.toLocaleDateString("en-US", options);
         }
- 

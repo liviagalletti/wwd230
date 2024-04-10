@@ -15,6 +15,11 @@
     
 </head>
 
+<div id="scootsBanner" class="banner" style="display: none;">
+    <p id="maxTempMessage">The max temperature for today is <span id="maxTemp"></span>&deg;F</p>
+    <span class="closeBtn" onclick="closeBanner()">❌</span>
+</div>
+
 <body>
     <header>
         <img src="images/logo scoot.png" alt="logo" width="200px">
@@ -43,6 +48,7 @@
     </div>
 
     <main class="main-index">
+
 
         <div class="weather">
             <h2>Weather</h2>
@@ -94,6 +100,7 @@
     </footer>
 
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 
 </body>
 
