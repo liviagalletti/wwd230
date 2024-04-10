@@ -85,6 +85,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.social-media-links {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.social-media-links p {
+    margin-right: 10px; /* Add some spacing between the text and the icons */
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+}
+
 /*____________________________________*/
 
 /*index*/
