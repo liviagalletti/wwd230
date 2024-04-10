@@ -1,0 +1,71 @@
+/*index*/
+
+@media screen and (max-width: 1025px) {
+    .call-border {
+        padding: 50px 50px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-index {
+        grid-template-columns: 1fr; /* Change grid to single column layout */
+        padding: 5vw; /* Adjust padding */
+    }
+
+    .hero {
+        max-height: 400px; /* Adjust hero height */
+    }
+
+    .call-border {
+        padding: 30px 50px; 
+    }
+
+}
+
+/*rentals*/
+
+@media screen and (max-width: 767px) {
+    /* Adjustments for table */
+    #rentalsTable th,
+    #rentalsTable td {
+        display: block; /* Change display to block */
+        width: 100%; /* Make cells full width */
+        padding: 5px; /* Reduce padding */
+        text-align: left; /* Align text to the left */
+    }
+
+
+    /* Adjustments for form container */
+    #reservationForm {
+        max-width: 90%; /* Adjust maximum width */
+    }
+
+    /* Adjustments for form input fields */
+    #reservationForm input[type="text"],
+    #reservationForm input[type="email"],
+    #reservationForm input[type="tel"],
+    #reservationForm input[type="number"],
+    #reservationForm select,
+    #reservationForm textarea {
+        width: 100%; /* Make input fields full width */
+    }
+}
+
+
+/*reservations*/
+@media screen and (max-width: 767px) {
+    .main_reservations{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*contact*/
+
+@media screen and (max-width: 995px) {
+    .main_contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

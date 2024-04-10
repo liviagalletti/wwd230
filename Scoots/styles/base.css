@@ -101,17 +101,19 @@ footer {
 /*____________________________________*/
 
 /*index*/
-.hero{
-    max-height: 800px; 
+.hero {
+    max-height: 800px;
     width: 100%;
+    position: relative; /* Add position relative to allow absolute positioning inside */
 }
 
 .hero img {
     width: 100%;
-    height: auto; /* Manter a proporção */
+    height: auto; /* Maintain the aspect ratio */
     object-fit: cover;
     object-position: center;
 }
+
 
 .call-border {
     position: absolute; /* Position the call-to-action relative to the hero */
@@ -127,13 +129,12 @@ footer {
 .call {
     color: white; /* Text color */
     font-weight: 500;
-    font-size: 5rem; /* Example font size */
-    font-family: var(--font-family-primary); 
+    font-size: 5vw; /* Example font size */
+    font-family: var(--font-family-primary);
     white-space: nowrap;
-    margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5vw; /* Use vw units for margin */
+    text-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.3); /* Use vw units for shadow */
 }
-
 .reserve a {
     color: white;
     text-decoration: none;
@@ -141,15 +142,17 @@ footer {
 
 .reserve {
     position: absolute;
-    left: 46%;
-    background-color:var(--primaryColor);
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom: 2vw; 
+    background-color: var(--primaryColor);
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
+    padding: .5vw .5vw; 
+    border-radius: 1vw; 
+    font-size: 1.5vw; 
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, color 0.3s
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .reserve:hover {
