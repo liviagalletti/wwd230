@@ -18,3 +18,4 @@ This project is a fictional website for scooter rental services. It was built us
 ## Additional Notes
 This project demonstrates how to integrate APIs into a website to provide real-time data to users. It also showcases the use of JSON files to manage content dynamically.
 
+[Here is the project](https://liviagalletti.github.io/wdd230/Scoots/index.html)
