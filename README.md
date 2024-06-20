@@ -1,21 +1,6 @@
-# Scooter Rental Website Project
+# Website Project (HTML/CSS/JS)
+The Scooter Rental Website Project is a fictional website designed for scooter rental services, built using HTML, CSS, and JavaScript to offer an engaging user experience. It includes features such as real-time weather updates retrieved from an API for current conditions and forecasts, and a dynamic pricing page that fetches data from a JSON file to display various pricing options. This project highlights the integration of APIs to deliver timely information to users, demonstrating effective use of JSON files for managing dynamic content.
 
-## Description
-This project is a fictional website for scooter rental services. It was built using HTML, CSS, and JavaScript. The website includes features such as:
+(O projeto do Website de Aluguel de Scooters é um site fictício projetado para serviços de aluguel de scooters, construído utilizando HTML, CSS e JavaScript para oferecer uma experiência de usuário envolvente. Ele inclui recursos como atualizações em tempo real do clima obtidas de uma API para condições atuais e previsões, e uma página de preços dinâmica que busca dados de um arquivo JSON para exibir diversas opções de preços. Este projeto destaca a integração de APIs para fornecer informações atualizadas aos usuários de forma oportuna, demonstrando o uso eficaz de arquivos JSON para gerenciar conteúdo dinâmico.)
 
-- Integration with a weather API to display current weather conditions and forecast for the upcoming days.
-- A pricing page that dynamically fetches content from a JSON file to display different pricing options.
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-
-## Features
-- Weather integration: The website fetches weather data from an API to provide users with current weather information and forecast.
-- Pricing page: Content for pricing options is fetched from a JSON file and dynamically displayed on the pricing page.
-
-## Additional Notes
-This project demonstrates how to integrate APIs into a website to provide real-time data to users. It also showcases the use of JSON files to manage content dynamically.
-
-[Here is the project](https://liviagalletti.github.io/wdd230/Scoots/index.html)
+## [Click here to see](https://liviagalletti.github.io/wdd230/Scoots/index.html)
